@@ -1,10 +1,13 @@
 // Required modules and files
 const inquirer = require('inquirer');
 const fs = require('fs');
+const util = require('util');
 const generateMarkdown = require("./utils/generateMarkdown");
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // Questions array
-const questions = [
+const askQuestions = () => {
+return inquirer.prompt([
     {
         type: "input",
         name: "projectTitle",
@@ -49,5 +52,20 @@ const questions = [
         message: "Please enter your email address",
         choices: ["Apache", "GNU", "MIT", "Mozilla", "The Unlicense", "Other"],
     },
-]
-console.log(questions);
+]);
+};
+
+const init = async () => {
+    console.log('Welcome!');
+    try {
+      const answers = await askQuestions();
+  
+      await writeFileAsync('yourREADME.md', generateReadme(answers));
+  
+      console.log('yourREADME.md has successfully been generated!');
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+init();
