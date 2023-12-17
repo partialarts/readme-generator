@@ -1,6 +1,9 @@
 // function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
+const generateMarkdown = (answers) => {
+  console.log(answers) 
+  return `# ${answers.projectTitle} ![${
+    answers.license}](https://img.shields.io/badge/${answers.license}-License-green)
+
 
 `;
 }

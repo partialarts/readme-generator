@@ -20,19 +20,24 @@ return inquirer.prompt([
     },
     {
         type: 'input',
-        name: 'usage',
-        message: 'Provide instructions for use',
+        name: 'installation',
+        message: 'Please provide installation instructions',
     },
     {
         type: 'input',
-        name: 'credits',
-        message: 'Provide any credits for your project',
+        name: 'usage',
+        message: 'Provide instructions for use',
     },
     {
         type: "list",
         name: "license",
         message: "Which license would you like to use?",
         choices: ["Apache", "GNU", "MIT", "Mozilla", "The Unlicense", "Other"],
+    },
+    {
+        type: "input",
+        name: "contributing",
+        message: "Please provid information on how to contribute to the project",
     },
     {
         type: "input",
@@ -55,12 +60,23 @@ return inquirer.prompt([
 ]);
 };
 
+const licenses = {
+    'Apache': 'https://opensource.org/licenses/Apache-2.0',
+    'GNU': 'https://www.gnu.org/licenses/gpl-3.0',
+    'MIT': 'https://opensource.org/licenses/MIT',
+    'Mozilla': 'https://opensource.org/licenses/MPL-2.0',
+    'The Unlicense': 'http://unlicense.org/',
+    'Other': '',
+};
+
 const init = async () => {
     console.log('Welcome!');
     try {
       const answers = await askQuestions();
+
+      const content = generateMarkdown(answers);
   
-      await writeFileAsync('yourREADME.md', generateReadme(answers));
+      await writeFileAsync('yourREADME.md', content);
   
       console.log('yourREADME.md has successfully been generated!');
     } catch (err) {
