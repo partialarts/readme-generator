@@ -8,10 +8,11 @@ The application dynamically generates a professional README.md file from a user'
 
 ## Table of Contents
 
--[Installation](#installation)
--[Usage](#usage)
--[Demo](#demo)
--[License](#license)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Demo] (#demo)
+- [License](#license)
 
 ## Installation
 
