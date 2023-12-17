@@ -37,36 +37,24 @@ return inquirer.prompt([
     {
         type: "input",
         name: "contributing",
-        message: "Please provid information on how to contribute to the project",
+        message: "Please provide information on how to contribute to the project",
     },
     {
         type: "input",
         name: "testInstructions",
         message: "Please enter testing instructions",
-        choices: ["Apache", "GNU", "MIT", "Mozilla", "The Unlicense", "Other"],
     },
     {
         type: "input",
         name: "gitHubName",
         message: "Please enter your GitHub username",
-        choices: ["Apache", "GNU", "MIT", "Mozilla", "The Unlicense", "Other"],
     },
     {
         type: "input",
         name: "email",
         message: "Please enter your email address",
-        choices: ["Apache", "GNU", "MIT", "Mozilla", "The Unlicense", "Other"],
     },
 ]);
-};
-
-const licenses = {
-    'Apache': 'https://opensource.org/licenses/Apache-2.0',
-    'GNU': 'https://www.gnu.org/licenses/gpl-3.0',
-    'MIT': 'https://opensource.org/licenses/MIT',
-    'Mozilla': 'https://opensource.org/licenses/MPL-2.0',
-    'The Unlicense': 'http://unlicense.org/',
-    'Other': '',
 };
 
 const init = async () => {
