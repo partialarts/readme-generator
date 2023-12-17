@@ -60,7 +60,7 @@ ${answers.testInstructions}
 
 Please contact me on: ${answers.email}
 
-Visit my GitHub profile [here](https://github.com/${answers.gitHubName})
+Visit my GitHub profile - [${answers.gitHubName}](https://github.com/${answers.gitHubName})
 `;
 }
 

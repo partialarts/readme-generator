@@ -32,7 +32,7 @@ A series of prompts will guide you through the process of generating the README 
 
 ## Demo
 
-View the demo video of the project
+[View the demo video of the project](./media/walkthrough-video.mp4)
 
 ## License
 
