@@ -33,7 +33,9 @@ A series of prompts will guide you through the process of generating the README 
 
 ## Demo
 
-[View the demo video of the project](./media/walkthrough-video.mp4)
+
+[Watch the Demo Video](https://github.com/partialarts/readme-generator/assets/145933508/5e575d52-1d80-42e0-9c29-2647f3adcb34)
+
 
 ## License
 
