@@ -1,8 +1,8 @@
-# Big Phat Project ![GNU](https://img.shields.io/badge/GNU-License-green)
+# README Generator ![MIT](https://img.shields.io/badge/MIT-License-green)
 
 ## Description
 
-This is my big phat project. It is big and phat and has many undulating parts. The best bits are hidden in all of the rolls of flab.
+An application to quickly generate README files for your projects
 
 ## Table of Contents
 
@@ -18,33 +18,33 @@ This is my big phat project. It is big and phat and has many undulating parts. T
 
 Please use the following instructions to install the application:
 ```
-Download and install like a normal person
+npm install package.json
 ```
 
 ## Usage
 
 Please follow the usage instructions below:
 ```
-Use like a normal person would
+node index.js
 ```
 
 ## License
 
-This application is covered under the [GNU license](https://www.gnu.org/licenses/gpl-3.0)
+This application is covered under the [MIT license](https://opensource.org/licenses/MIT)
 
 ## Contributing
 
-Don't
+Clone the repo and make a pull request for any changes
 
 ## Tests
 
 Please follow these test instructions:
 ```
-Test it like a maniac please and thank you
+Feel free to test and report any bugs to me
 ```
 
 ## Questions
 
-Please contact me on: jem@j-lawton.com
+Please contact me on: notarealemail@hotmail.com
 
-Visit my GitHub profile [here](https://github.com/undefined)
+Visit my GitHub profile [here](https://github.com/partialarts)
