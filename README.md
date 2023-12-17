@@ -11,7 +11,7 @@ The application dynamically generates a professional README.md file from a user'
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Demo] (#demo)
+- [Demo](#demo)
 - [License](#license)
 
 ## Installation
